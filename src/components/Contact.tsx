@@ -1,5 +1,6 @@
 
-import { Mail, Phone, MapPin, Linkedin } from 'lucide-react';
+import { Mail, MapPin, Linkedin } from 'lucide-react';
+import { MessageCircle } from 'lucide-react';
 
 const Contact = () => {
   return (
@@ -25,8 +26,8 @@ const Contact = () => {
             </p>
 
             <div className="space-y-6">
-              <div className="flex items-center">
-                <div className="bg-blue-100 p-3 rounded-lg mr-4">
+              <div className="flex items-center group hover:transform hover:translate-x-2 transition-all duration-300">
+                <div className="bg-blue-100 p-3 rounded-lg mr-4 group-hover:bg-blue-200 transition-colors duration-300">
                   <Mail className="text-blue-600" size={24} />
                 </div>
                 <div>
@@ -40,24 +41,26 @@ const Contact = () => {
                 </div>
               </div>
 
-              <div className="flex items-center">
-                <div className="bg-blue-100 p-3 rounded-lg mr-4">
-                  <Phone className="text-blue-600" size={24} />
+              <div className="flex items-center group hover:transform hover:translate-x-2 transition-all duration-300">
+                <div className="bg-green-100 p-3 rounded-lg mr-4 group-hover:bg-green-200 transition-colors duration-300">
+                  <MessageCircle className="text-green-600" size={24} />
                 </div>
                 <div>
-                  <h4 className="font-semibold text-gray-900">Phone</h4>
+                  <h4 className="font-semibold text-gray-900">WhatsApp</h4>
                   <a 
-                    href="tel:+353852357286"
-                    className="text-blue-600 hover:text-blue-700 transition-colors duration-200"
+                    href="https://wa.me/353852357286"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-green-600 hover:text-green-700 transition-colors duration-200"
                   >
                     +353 85 235 7286
                   </a>
                 </div>
               </div>
 
-              <div className="flex items-center">
-                <div className="bg-blue-100 p-3 rounded-lg mr-4">
-                  <MapPin className="text-blue-600" size={24} />
+              <div className="flex items-center group hover:transform hover:translate-x-2 transition-all duration-300">
+                <div className="bg-purple-100 p-3 rounded-lg mr-4 group-hover:bg-purple-200 transition-colors duration-300">
+                  <MapPin className="text-purple-600" size={24} />
                 </div>
                 <div>
                   <h4 className="font-semibold text-gray-900">Location</h4>
@@ -65,8 +68,8 @@ const Contact = () => {
                 </div>
               </div>
 
-              <div className="flex items-center">
-                <div className="bg-blue-100 p-3 rounded-lg mr-4">
+              <div className="flex items-center group hover:transform hover:translate-x-2 transition-all duration-300">
+                <div className="bg-blue-100 p-3 rounded-lg mr-4 group-hover:bg-blue-200 transition-colors duration-300">
                   <Linkedin className="text-blue-600" size={24} />
                 </div>
                 <div>
@@ -84,32 +87,32 @@ const Contact = () => {
             </div>
           </div>
 
-          <div className="bg-gray-50 rounded-lg p-8">
+          <div className="bg-gradient-to-br from-gray-50 to-blue-50 rounded-xl p-8 shadow-lg">
             <h3 className="text-2xl font-bold text-gray-900 mb-6">Areas of Expertise</h3>
             
             <div className="space-y-6">
-              <div>
+              <div className="bg-white p-4 rounded-lg shadow-sm border-l-4 border-blue-500">
                 <h4 className="font-semibold text-gray-900 mb-2">🚀 Blockchain & Web3</h4>
                 <p className="text-gray-600 text-sm">
                   DeFi platforms, Smart contracts, NFT marketplaces, Multi-chain development
                 </p>
               </div>
               
-              <div>
+              <div className="bg-white p-4 rounded-lg shadow-sm border-l-4 border-purple-500">
                 <h4 className="font-semibold text-gray-900 mb-2">🤖 AI & Machine Learning</h4>
                 <p className="text-gray-600 text-sm">
                   Fraud detection, Predictive analytics, Computer vision, NLP integration
                 </p>
               </div>
               
-              <div>
+              <div className="bg-white p-4 rounded-lg shadow-sm border-l-4 border-green-500">
                 <h4 className="font-semibold text-gray-900 mb-2">💻 Full Stack Development</h4>
                 <p className="text-gray-600 text-sm">
                   React/Angular/Vue.js, Node.js/Python, Cloud architecture, DevOps
                 </p>
               </div>
               
-              <div>
+              <div className="bg-white p-4 rounded-lg shadow-sm border-l-4 border-yellow-500">
                 <h4 className="font-semibold text-gray-900 mb-2">💳 FinTech Solutions</h4>
                 <p className="text-gray-600 text-sm">
                   Payment systems, Security compliance, Trading platforms, Mobile banking
@@ -124,7 +127,8 @@ const Contact = () => {
                 Open to remote work and international projects.
               </p>
               <div className="flex space-x-4">
-                <span className="bg-green-100 text-green-800 px-3 py-1 rounded-full text-xs font-medium">
+                <span className="bg-green-100 text-green-800 px-3 py-1 rounded-full text-xs font-medium flex items-center">
+                  <span className="w-2 h-2 bg-green-500 rounded-full mr-2 animate-pulse"></span>
                   Available
                 </span>
                 <span className="bg-blue-100 text-blue-800 px-3 py-1 rounded-full text-xs font-medium">
