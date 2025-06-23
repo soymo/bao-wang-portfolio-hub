@@ -28,55 +28,63 @@ const About = () => {
   ];
 
   return (
-    <section id="about" className="py-20 bg-white parallax-3d">
+    <section id="about" className="py-20 bg-white dark:bg-gray-900 parallax-3d overflow-visible">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 parallax-layer">
         <div className="text-center mb-16">
-          <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-4 text-3d">
+          <h2 className="text-4xl md:text-5xl font-bold text-gray-900 dark:text-white mb-4 text-3d">
             About Me
           </h2>
           <div className="w-24 h-1 bg-gradient-to-r from-blue-600 to-purple-600 mx-auto card-3d"></div>
         </div>
 
-        <div className="grid lg:grid-cols-2 gap-12 items-center">
+        <div className="grid lg:grid-cols-2 gap-12 items-start">
           <div className="card-3d">
-            <h3 className="text-2xl font-bold text-gray-900 mb-6">
+            <h3 className="text-2xl font-bold text-gray-900 dark:text-white mb-6">
               Professional Summary
             </h3>
-            <p className="text-gray-600 leading-relaxed mb-6 hover-lift">
+            <p className="text-gray-600 dark:text-gray-300 leading-relaxed mb-6 hover-lift">
               Full Stack Developer with 10+ years of hands-on experience architecting secure, scalable, and AI-integrated 
               platforms across the blockchain, insurance, fintech, and e-commerce domains. Adept in leading frontend and 
               backend development using React, Angular, NestJS, and Python frameworks.
             </p>
-            <p className="text-gray-600 leading-relaxed mb-8 hover-lift">
+            <p className="text-gray-600 dark:text-gray-300 leading-relaxed mb-8 hover-lift">
               Strong emphasis on performance, accessibility, and cloud-native infrastructure. Proven track record of building 
               AI-enhanced systems using TensorFlow and OpenAI, integrating Web3 capabilities, and deploying CI/CD pipelines 
-              across AWS, GCP, and Kubernetes.
+              across AWS, GCP, and Kubernetes. Expert in TDD, DevOps automation, and system design across distributed teams.
             </p>
             
             <div className="grid sm:grid-cols-2 gap-6">
               <div className="card-3d">
-                <h4 className="font-semibold text-gray-900 mb-2">Education</h4>
-                <p className="text-gray-600">Bachelor of Science in Computer Science</p>
-                <p className="text-gray-500 text-sm">University of Zielona Góra, Poland</p>
-                <p className="text-gray-500 text-sm">2010 - 2014</p>
+                <h4 className="font-semibold text-gray-900 dark:text-white mb-2">Education</h4>
+                <p className="text-gray-600 dark:text-gray-300">Bachelor of Science in Computer Science</p>
+                <p className="text-gray-500 dark:text-gray-400 text-sm">University of Zielona Góra, Poland</p>
+                <p className="text-gray-500 dark:text-gray-400 text-sm">2010 - 2014</p>
               </div>
               <div className="card-3d">
-                <h4 className="font-semibold text-gray-900 mb-2">Contact</h4>
-                <p className="text-gray-600">remigiuszwang.dev@gmail.com</p>
-                <p className="text-gray-600">+48 724 474 752</p>
-                <p className="text-gray-600">Żagań, Poland</p>
+                <h4 className="font-semibold text-gray-900 dark:text-white mb-2">Contact</h4>
+                <p className="text-gray-600 dark:text-gray-300">remigiuszwang.dev@gmail.com</p>
+                <p className="text-gray-600 dark:text-gray-300">+48 724 474 752</p>
+                <p className="text-gray-600 dark:text-gray-300">Żagań, Poland</p>
               </div>
             </div>
           </div>
 
-          <div className="space-y-6">
-            <h3 className="text-2xl font-bold text-gray-900 mb-6">
+          <div className="space-y-6 relative">
+            <h3 className="text-2xl font-bold text-gray-900 dark:text-white mb-6">
               Key Highlights
             </h3>
             {achievements.map((achievement, index) => (
-              <div key={index} className={`bg-gray-50 p-6 rounded-lg hover:shadow-md transition-shadow duration-200 ${index % 2 === 0 ? 'card-3d' : 'card-3d card-3d-reverse'}`}>
-                <h4 className="font-semibold text-gray-900 mb-3">{achievement.title}</h4>
-                <p className="text-gray-600 leading-relaxed hover-lift">{achievement.description}</p>
+              <div 
+                key={index} 
+                className={`bg-gray-50 dark:bg-gray-800 p-6 rounded-lg transition-all duration-300 relative z-10 hover:z-20 hover:scale-105 hover:shadow-xl ${
+                  index % 2 === 0 ? 'card-3d' : 'card-3d card-3d-reverse'
+                }`}
+                style={{
+                  transformOrigin: 'center center'
+                }}
+              >
+                <h4 className="font-semibold text-gray-900 dark:text-white mb-3">{achievement.title}</h4>
+                <p className="text-gray-600 dark:text-gray-300 leading-relaxed">{achievement.description}</p>
               </div>
             ))}
           </div>
