@@ -2,63 +2,55 @@
 const Experience = () => {
   const experiences = [
     {
-      title: "Senior Software Engineer",
-      company: "4soft",
-      location: "Wrocław, Poland (Remote)",
-      period: "Jul 2023 – Jun 2025",
+      title: "Software Engineer",
+      company: "Bdeo",
+      location: "Spain (Remote)",
+      period: "Jan 2022 – Present",
       highlights: [
-        "Led end-to-end development of DApps and smart contracts on Ethereum, Solana, TON",
-        "Launched multiple DeFi platforms and blockchain-based betting game platforms",
-        "Integrated AI-driven features for fraud detection using TensorFlow and OpenAI APIs",
-        "Mentored junior developers in blockchain best practices and secure smart contract development"
+        "Engineered backend services using Python (FastAPI), supporting high-throughput claims automation in AI-driven insurance platform",
+        "Integrated TensorFlow models into backend pipelines for real-time fraud analysis, reducing false claims by over 30%",
+        "Developed Solana trading bots (Volume bot, Holder bot, Sniper bot) in TypeScript, Golang, and Python",
+        "Deployed smart contracts in Rust for Solana dApps and integrated web3 into React, Next.js, Angular applications",
+        "Applied TDD principles using Jasmine in React projects to verify component behavior before implementation"
       ]
     },
     {
-      title: "Senior Software Engineer",
-      company: "Hai Robotics",
-      location: "Hoofddorp, Netherlands (Remote)",
-      period: "Aug 2021 – Jul 2023",
+      title: "Full Stack Blockchain Engineer",
+      company: "Zignaly",
+      location: "Spain (Remote)",
+      period: "Mar 2019 – Dec 2021",
       highlights: [
-        "Developed backend and frontend modules for robotics automation platforms",
-        "Integrated advanced AI/ML models for real-time object detection and route optimization",
-        "Built microservices and APIs connecting robotics systems with enterprise SaaS platforms",
-        "Led migration of legacy systems to microservices architecture"
+        "Architected Node.js backend APIs using NestJS and Prisma for NFT minting, trading history, and portfolio analytics",
+        "Built robust Web3 integration pipelines supporting wallet connectivity, token management, and smart contract interactions",
+        "Integrated TensorFlow NLP models for crypto sentiment classification, powering real-time portfolio risk scoring",
+        "Deployed smart contracts using Solidity, Hardhat, Remix and integrated Ethereum wallets with Web3.js",
+        "Transformed Unity-based blockchain game into web and mobile format using D3.js, Next.js, and Web3.js"
       ]
     },
     {
       title: "Full Stack Engineer",
-      company: "Greenfinch Technology",
-      location: "Dublin, Ireland",
-      period: "Aug 2019 – Jul 2021",
+      company: "GillBus",
+      location: "Poland",
+      period: "Mar 2016 – Feb 2019",
       highlights: [
-        "Delivered custom web applications for finance, healthcare, and logistics clients",
-        "Designed and optimized PostgreSQL and MongoDB schemas",
-        "Integrated third-party APIs and payment gateways for secure transactions",
-        "Led accessibility and performance improvements ensuring WCAG compliance"
+        "Refactored PHP monolith to modular Node.js backend stack, improving maintainability and scaling user load",
+        "Built dynamic frontend UI in React with server-connected booking, seat selection, and payment processing",
+        "Connected external payment gateways including PayPal and Stripe with server-side validation",
+        "Implemented full WCAG 2.1 AA compliance with semantic HTML and ARIA roles across all frontend views",
+        "Automated frontend and backend regression tests with Jasmine and Nightwatch, achieving over 85% test coverage"
       ]
     },
     {
-      title: "Software Developer",
-      company: "Acoustic Technology",
-      location: "Shanghai, China",
-      period: "Aug 2017 – Jul 2019",
+      title: "Full Stack Developer",
+      company: "RevDeBug",
+      location: "Poland",
+      period: "Jun 2014 – Mar 2016",
       highlights: [
-        "Developed IoT and smart device management platforms",
-        "Integrated real-time data streams and device control APIs",
-        "Implemented secure authentication using OAuth2 and JWT",
-        "Enhanced system monitoring and alerting, reducing incident response times"
-      ]
-    },
-    {
-      title: "Software Developer",
-      company: "Akamai Technologies Ltd",
-      location: "Dublin, Ireland",
-      period: "Jul 2015 – Jun 2017",
-      highlights: [
-        "Built high-availability backend services for global CDN and security products",
-        "Automated deployment and monitoring pipelines with Docker and Jenkins",
-        "Improved system performance supporting millions of requests per day",
-        "Supported migration of legacy systems to cloud infrastructure"
+        "Implemented scalable backend modules using Node.js and Django for live debugging and error replay features",
+        "Delivered front-end debugging dashboards in React with WebSocket connections to backend event streams",
+        "Built MobX state recording system enabling precise UI state tracking and playback for debugging sessions",
+        "Extended SDK support for plugins running in Python, Node.js, and PHP applications",
+        "Configured Jenkins CI/CD pipelines for release automation across Node and Python-based environments"
       ]
     }
   ];

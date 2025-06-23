@@ -33,10 +33,10 @@ const Contact = () => {
                 <div>
                   <h4 className="font-semibold text-gray-900">Email</h4>
                   <a 
-                    href="mailto:0xwangchunbao@gmail.com"
+                    href="mailto:remigiuszwang.dev@gmail.com"
                     className="text-blue-600 hover:text-blue-700 transition-colors duration-200"
                   >
-                    0xwangchunbao@gmail.com
+                    remigiuszwang.dev@gmail.com
                   </a>
                 </div>
               </div>
@@ -46,14 +46,12 @@ const Contact = () => {
                   <MessageCircle className="text-green-600" size={24} />
                 </div>
                 <div>
-                  <h4 className="font-semibold text-gray-900">WhatsApp</h4>
+                  <h4 className="font-semibold text-gray-900">Phone</h4>
                   <a 
-                    href="https://wa.me/353852357286"
-                    target="_blank"
-                    rel="noopener noreferrer"
+                    href="tel:+48724474752"
                     className="text-green-600 hover:text-green-700 transition-colors duration-200"
                   >
-                    +353 85 235 7286
+                    +48 724 474 752
                   </a>
                 </div>
               </div>
@@ -64,7 +62,7 @@ const Contact = () => {
                 </div>
                 <div>
                   <h4 className="font-semibold text-gray-900">Location</h4>
-                  <p className="text-gray-600">13 Adelaide Road, E597, Dublin, Ireland</p>
+                  <p className="text-gray-600">Słowackieg, 68-100 Żagań, Lubuskie, Poland</p>
                 </div>
               </div>
 
@@ -75,7 +73,7 @@ const Contact = () => {
                 <div>
                   <h4 className="font-semibold text-gray-900">LinkedIn</h4>
                   <a 
-                    href="https://www.linkedin.com/in/chun-bao-wang-26938a36b"
+                    href="https://www.linkedin.com/in/remigiusz-wang-4b086236a"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="text-blue-600 hover:text-blue-700 transition-colors duration-200"
@@ -94,28 +92,28 @@ const Contact = () => {
               <div className="bg-white p-4 rounded-lg shadow-sm border-l-4 border-blue-500 hover-lift">
                 <h4 className="font-semibold text-gray-900 mb-2">🚀 Blockchain & Web3</h4>
                 <p className="text-gray-600 text-sm">
-                  DeFi platforms, Smart contracts, NFT marketplaces, Multi-chain development
+                  DeFi platforms, Smart contracts, NFT marketplaces, Trading bots, Multi-chain development
                 </p>
               </div>
               
               <div className="bg-white p-4 rounded-lg shadow-sm border-l-4 border-purple-500 hover-lift">
                 <h4 className="font-semibold text-gray-900 mb-2">🤖 AI & Machine Learning</h4>
                 <p className="text-gray-600 text-sm">
-                  Fraud detection, Predictive analytics, Computer vision, NLP integration
+                  TensorFlow integration, OpenAI GPT-4, Fraud detection, NLP pipelines, ML automation
                 </p>
               </div>
               
               <div className="bg-white p-4 rounded-lg shadow-sm border-l-4 border-green-500 hover-lift">
                 <h4 className="font-semibold text-gray-900 mb-2">💻 Full Stack Development</h4>
                 <p className="text-gray-600 text-sm">
-                  React/Angular/Vue.js, Node.js/Python, Cloud architecture, DevOps
+                  React/Angular, NestJS/FastAPI, Cloud architecture, Microservices, DevOps
                 </p>
               </div>
               
               <div className="bg-white p-4 rounded-lg shadow-sm border-l-4 border-yellow-500 hover-lift">
-                <h4 className="font-semibold text-gray-900 mb-2">💳 FinTech Solutions</h4>
+                <h4 className="font-semibold text-gray-900 mb-2">💳 Enterprise Solutions</h4>
                 <p className="text-gray-600 text-sm">
-                  Payment systems, Security compliance, Trading platforms, Mobile banking
+                  Payment systems, Security compliance, Insurance platforms, E-commerce solutions
                 </p>
               </div>
             </div>

@@ -2,71 +2,81 @@
 const About = () => {
   const achievements = [
     {
-      title: "Full Stack Development",
-      description: "Delivered robust applications using React, Vue.js, Angular, Node.js, Python frameworks with strong emphasis on accessibility and security."
+      title: "Full Stack Engineering",
+      description: "Extensive knowledge of building enterprise-grade applications with React, NestJS, Prisma, and GraphQL, with production-grade use of Stripe and PayPal for secure payments."
     },
     {
-      title: "Blockchain and Web3",
-      description: "Built DApps using Solidity, Rust and Web3.js on multiple networks including Ethereum, Solana, and Polkadot."
+      title: "AI & ML Integration",
+      description: "Integrated TensorFlow-based fraud detection in insurance workflows; embedded OpenAI GPT-4 for content automation and chat agents, reducing false claims by over 30%."
     },
     {
-      title: "AI, Cloud & DevOps",
-      description: "Integrated AI/ML workflows for fraud detection and automation, managed cloud-native architectures using AWS and Azure."
+      title: "Blockchain Expertise",
+      description: "Hands-on contributions to DApps, smart contracts, and crypto trading infrastructure using Web3.js, Solidity, Rust, and Go since 2019."
     },
     {
-      title: "Leadership and Collaboration",
-      description: "Led complex technical projects, mentored junior developers, and contributed to rapid growth of fintech and blockchain startups."
+      title: "DevOps & Infrastructure",
+      description: "Managed scalable CI/CD pipelines with GitHub Actions, Terraform, and Kubernetes; implemented monitoring on AWS, GCP, and Azure."
+    },
+    {
+      title: "Testing & Quality",
+      description: "Strong focus on test reliability with Jasmine, Jest, and Playwright; built accessibility-first applications compliant with WCAG 2.1 AA."
+    },
+    {
+      title: "Leadership & Collaboration",
+      description: "Operated in high-growth startups and B2B SaaS companies, mentoring teams and leading cross-functional feature launches."
     }
   ];
 
   return (
-    <section id="about" className="py-20 bg-white">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <section id="about" className="py-20 bg-white parallax-3d">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 parallax-layer">
         <div className="text-center mb-16">
-          <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-4">
+          <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-4 text-3d">
             About Me
           </h2>
-          <div className="w-24 h-1 bg-gradient-to-r from-blue-600 to-purple-600 mx-auto"></div>
+          <div className="w-24 h-1 bg-gradient-to-r from-blue-600 to-purple-600 mx-auto card-3d"></div>
         </div>
 
         <div className="grid lg:grid-cols-2 gap-12 items-center">
-          <div>
+          <div className="card-3d">
             <h3 className="text-2xl font-bold text-gray-900 mb-6">
               Professional Summary
             </h3>
-            <p className="text-gray-600 leading-relaxed mb-6">
-              Full Stack Software Engineer with 10+ years of experience delivering scalable, secure, and innovative solutions 
-              across fintech, AI, and blockchain sectors. Proven expertise in architecting and developing robust web applications, 
-              smart contracts, and decentralized apps (DApps).
+            <p className="text-gray-600 leading-relaxed mb-6 hover-lift">
+              Full Stack Developer with 10+ years of hands-on experience architecting secure, scalable, and AI-integrated 
+              platforms across the blockchain, insurance, fintech, and e-commerce domains. Adept in leading frontend and 
+              backend development using React, Angular, NestJS, and Python frameworks.
             </p>
-            <p className="text-gray-600 leading-relaxed mb-8">
-              Adept at leading cross-functional teams, integrating AI/ML workflows, and driving cloud-native deployments for 
-              global clients. Passionate about building products that solve real-world problems and empower users.
+            <p className="text-gray-600 leading-relaxed mb-8 hover-lift">
+              Strong emphasis on performance, accessibility, and cloud-native infrastructure. Proven track record of building 
+              AI-enhanced systems using TensorFlow and OpenAI, integrating Web3 capabilities, and deploying CI/CD pipelines 
+              across AWS, GCP, and Kubernetes.
             </p>
             
             <div className="grid sm:grid-cols-2 gap-6">
-              <div>
+              <div className="card-3d">
                 <h4 className="font-semibold text-gray-900 mb-2">Education</h4>
                 <p className="text-gray-600">Bachelor of Science in Computer Science</p>
-                <p className="text-gray-500 text-sm">University College Dublin, Ireland</p>
-                <p className="text-gray-500 text-sm">2011 - 2015</p>
+                <p className="text-gray-500 text-sm">University of Zielona Góra, Poland</p>
+                <p className="text-gray-500 text-sm">2010 - 2014</p>
               </div>
-              <div>
-                <h4 className="font-semibold text-gray-900 mb-2">Languages</h4>
-                <p className="text-gray-600">English (Fluent)</p>
-                <p className="text-gray-600">Mandarin (Native)</p>
+              <div className="card-3d">
+                <h4 className="font-semibold text-gray-900 mb-2">Contact</h4>
+                <p className="text-gray-600">remigiuszwang.dev@gmail.com</p>
+                <p className="text-gray-600">+48 724 474 752</p>
+                <p className="text-gray-600">Żagań, Poland</p>
               </div>
             </div>
           </div>
 
           <div className="space-y-6">
             <h3 className="text-2xl font-bold text-gray-900 mb-6">
-              Key Achievements
+              Key Highlights
             </h3>
             {achievements.map((achievement, index) => (
-              <div key={index} className="bg-gray-50 p-6 rounded-lg hover:shadow-md transition-shadow duration-200">
+              <div key={index} className={`bg-gray-50 p-6 rounded-lg hover:shadow-md transition-shadow duration-200 ${index % 2 === 0 ? 'card-3d' : 'card-3d card-3d-reverse'}`}>
                 <h4 className="font-semibold text-gray-900 mb-3">{achievement.title}</h4>
-                <p className="text-gray-600 leading-relaxed">{achievement.description}</p>
+                <p className="text-gray-600 leading-relaxed hover-lift">{achievement.description}</p>
               </div>
             ))}
           </div>

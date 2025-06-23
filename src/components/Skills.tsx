@@ -4,42 +4,42 @@ const Skills = () => {
     {
       title: "Frontend",
       icon: "🎨",
-      skills: ["React", "Angular", "Vue.js", "TypeScript", "JavaScript", "Tailwind CSS", "Material UI", "Shadcn UI"]
+      skills: ["React", "Angular", "TypeScript", "MobX", "RxJS", "NgRx", "Tailwind CSS", "Storybook", "HTML5", "CSS3"]
     },
     {
       title: "Backend",
       icon: "⚙️",
-      skills: ["Node.js", "Python", "Django", "FastAPI", "Flask", ".NET Core", "Java", "PHP"]
+      skills: ["Node.js", "NestJS", "Express", "Python", "FastAPI", "Flask", "Django", "PHP", "Prisma ORM"]
     },
     {
-      title: "Blockchain",
+      title: "Blockchain & Web3",
       icon: "⛓️",
-      skills: ["Solidity", "Rust", "Web3.js", "Ethereum", "Solana", "Polygon", "Smart Contracts", "DApp Development"]
+      skills: ["Solidity", "Rust", "Go", "Web3.js", "Hardhat", "Remix", "Smart Contracts", "DApp Development", "NFT"]
     },
     {
       title: "AI & ML",
       icon: "🤖",
-      skills: ["TensorFlow", "OpenAI API", "ML Model Integration", "Data Analytics"]
+      skills: ["TensorFlow", "OpenAI API", "GPT-4", "NLP", "Fraud Detection", "ML Integration"]
     },
     {
       title: "Cloud & DevOps",
       icon: "☁️",
-      skills: ["AWS", "Azure", "GCP", "Docker", "Kubernetes", "Terraform", "CI/CD", "Jenkins"]
+      skills: ["AWS", "GCP", "Azure", "Docker", "Kubernetes", "Terraform", "GitHub Actions", "Jenkins", "CI/CD"]
     },
     {
       title: "Databases",
       icon: "💾",
-      skills: ["PostgreSQL", "MySQL", "MongoDB", "Prisma ORM", "Firestore", "NoSQL"]
+      skills: ["PostgreSQL", "MySQL", "MongoDB", "Firestore", "NoSQL", "GraphQL"]
     },
     {
       title: "Testing",
       icon: "🧪",
-      skills: ["Jest", "Cypress", "Playwright", "Jasmine", "TDD"]
+      skills: ["Jest", "Jasmine", "Cypress", "Playwright", "TDD", "Nightwatch"]
     },
     {
-      title: "Other",
-      icon: "🛠️",
-      skills: ["RESTful APIs", "GraphQL", "OAuth2", "JWT", "Stripe", "PayPal", "WCAG 2.1 AA"]
+      title: "Payments & Auth",
+      icon: "🔐",
+      skills: ["Stripe", "PayPal", "OAuth2", "JWT", "Auth0", "WCAG 2.1 AA"]
     }
   ];
 
@@ -79,16 +79,16 @@ const Skills = () => {
           <h3 className="text-2xl font-bold mb-4 text-3d">Specialized Expertise</h3>
           <div className="grid md:grid-cols-3 gap-6 text-center">
             <div className="hover-lift">
-              <h4 className="font-semibold mb-2">Blockchain Innovation</h4>
-              <p className="text-blue-100">DeFi, NFTs, Smart Contracts, Multi-chain Development</p>
+              <h4 className="font-semibold mb-2">🚀 Blockchain Innovation</h4>
+              <p className="text-blue-100">DeFi, NFTs, Smart Contracts, Trading Bots, Multi-chain Development</p>
             </div>
             <div className="hover-lift">
-              <h4 className="font-semibold mb-2">AI/ML Integration</h4>
-              <p className="text-blue-100">Fraud Detection, Automation, Predictive Analytics</p>
+              <h4 className="font-semibold mb-2">🤖 AI/ML Integration</h4>
+              <p className="text-blue-100">Fraud Detection, TensorFlow, OpenAI GPT-4, NLP Pipelines</p>
             </div>
             <div className="hover-lift">
-              <h4 className="font-semibold mb-2">Full Stack Architecture</h4>
-              <p className="text-blue-100">Scalable Systems, Microservices, Cloud-Native Solutions</p>
+              <h4 className="font-semibold mb-2">☁️ Cloud Architecture</h4>
+              <p className="text-blue-100">Microservices, Kubernetes, CI/CD, Scalable Systems</p>
             </div>
           </div>
         </div>
