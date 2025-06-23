@@ -64,18 +64,18 @@ const Experience = () => {
   ];
 
   return (
-    <section id="experience" className="py-20 bg-gray-50">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <section id="experience" className="py-20 bg-gray-50 parallax-3d">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 parallax-layer">
         <div className="text-center mb-16">
-          <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-4">
+          <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-4 text-3d">
             Professional Experience
           </h2>
-          <div className="w-24 h-1 bg-gradient-to-r from-blue-600 to-purple-600 mx-auto"></div>
+          <div className="w-24 h-1 bg-gradient-to-r from-blue-600 to-purple-600 mx-auto card-3d"></div>
         </div>
 
         <div className="space-y-8">
           {experiences.map((exp, index) => (
-            <div key={index} className="bg-white rounded-lg shadow-md p-6 hover:shadow-lg transition-shadow duration-200">
+            <div key={index} className={`bg-white rounded-lg shadow-md p-6 hover:shadow-lg transition-shadow duration-200 ${index % 2 === 0 ? 'card-3d' : 'card-3d card-3d-reverse'}`}>
               <div className="flex flex-col md:flex-row md:items-center md:justify-between mb-4">
                 <div>
                   <h3 className="text-xl font-bold text-gray-900">{exp.title}</h3>
@@ -83,7 +83,7 @@ const Experience = () => {
                   <p className="text-gray-500">{exp.location}</p>
                 </div>
                 <div className="mt-2 md:mt-0">
-                  <span className="bg-blue-100 text-blue-800 px-3 py-1 rounded-full text-sm font-medium">
+                  <span className="bg-blue-100 text-blue-800 px-3 py-1 rounded-full text-sm font-medium skill-tag-3d">
                     {exp.period}
                   </span>
                 </div>
@@ -91,8 +91,8 @@ const Experience = () => {
               
               <ul className="space-y-2">
                 {exp.highlights.map((highlight, idx) => (
-                  <li key={idx} className="flex items-start">
-                    <span className="text-blue-600 mr-2 mt-1.5">•</span>
+                  <li key={idx} className="flex items-start hover-lift">
+                    <span className="text-blue-600 mr-2 mt-1.5 icon-3d">•</span>
                     <span className="text-gray-600">{highlight}</span>
                   </li>
                 ))}
