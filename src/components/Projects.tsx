@@ -1,4 +1,6 @@
 
+import { Mail } from 'lucide-react';
+
 const Projects = () => {
   const projects = [
     {
